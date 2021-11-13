@@ -1,0 +1,74 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100%;height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("images/background.png");
+    background-position: center;background-size: cover;position: relative;padding: 0 8%;
+}
+.logo{
+    height: 100px;padding: 15px 0;cursor: pointer;
+}
+.cart-icon{height: 35px;cursor: pointer;}
+.cart-icon{padding-left: 28px;}
+nav{display: flex;align-items: center;}
+ul{
+    flex: 1;text-align: right;
+}
+ul li{
+    display: inline-block;list-style: none;
+    padding: 15px 28px ;
+}
+ul li a{text-decoration: none; color: #fff;
+    position: relative;
+}
+ul li a::after{
+    content:"" ;
+    position: absolute;left: 50%;bottom: -5px;
+    background-color: #fff;width: 0;height: 3px;
+    transform: translateX(-50%);transition: 0.3s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;font-weight: 600;
+}
+.text-box h1{
+    font-size: 190px;line-height: 160px;
+    margin-left: -10px;color: transparent;
+    -webkit-text-stroke:1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip:text;
+    background-position:0 0 ; animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{background-position: 2000px 0;}
+}
+.text-box .row{
+    display: flex;align-items: center;
+    flex-wrap: wrap;margin-top: 30px;
+}
+.text-box a{
+    color: #fff;text-decoration: none;
+    padding: 10px 20px;margin-right: 20px;
+    border: 2px solid #fff;display: flex;align-items: center;
+
+}
+.text-box a span{
+    font-size: 30px;line-height: 15px;margin-left: 5px;
+}
+.social-icons{
+    position: absolute;right: 5%;bottom: 8%;
+
+}
+.social-icons img{
+    width: 25px;height: 25px;margin: 25px 5px;
+    display: block;
+}
