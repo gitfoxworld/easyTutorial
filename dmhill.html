@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM easyhill</title>
+    <link rel="stylesheet" href="dmeasy.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-bar">
+
+                <img class="logo" src="images/logo.png" alt="">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                </ul>
+                <img class="menu-mobile" src="images/menu.png" alt="">
+            </div>
+            <div class="social-media">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">instagram</a>
+
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="main-info">
+                <div class="left-info">
+                    <span><img src="images/location.png" alt="">The Himalaya, India</span>
+                    <h1>The <br> Himalaya</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing <br> sit amet consectetur adipisicing elit. Nisi vero culpa quos aut, nobis
+                        voluptates?</p>
+                </div>
+                <div class="right-info">
+                    <span><img src="images/sun.png" alt="">deg F</span>
+                    <span><img src="images/location.png" alt="">Distance: 343 km</span>
+                    <span><img src="images/duration.png" alt="">Durations: 24 hours</span>
+          
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ======================================== Login Form ============== -->
+         <div class="container_log">
+             <div class="row">
+
+               
+                 <div class="left_part">
+                    <div class="form1-btn">
+                        <span onclick="login()">LOGIN</span>
+                        <span onclick="register()">REGISTER</span>
+                        <hr id="indicator">
+     
+                       </div>
+                  
+                  <div class="main-part">
+                    <div id="LoginForm">
+                        <form action=" ">  
+                            <input type="text" placeholder="Username"> 
+                           <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>             
+                            <a href="">forget password</a>
+                         </form>
+                      </div>
+                     <div id="RegForm">
+                        <form action=" ">  
+                            <input type="text" placeholder="Username"> 
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>             
+                       </form>
+                       </div> 
+                  </div>
+
+
+
+                 </div>
+                 
+             </div>
+
+         </div>
+
+
+
+
+
+
+
+  <script>
+      var LoginForm = document.getElementById("LoginForm"); 
+      var RegForm = document.getElementById("RegForm"); 
+      var indicator = document.getElementById("indicator"); 
+
+      function register(){
+          RegForm.style.transform = "translateX(0px)";
+          LoginForm.style.transform = "translateX(0px)";
+          indicator.style.transform = "translateX(200px)";
+      }
+      function login(){
+          RegForm.style.transform = "translateX(400px)";
+          LoginForm.style.transform = "translateX(300px)";
+          indicator.style.transform = "translateX(30px)";
+      }
+
+
+  </script>
+
+</body>
+
+</html>
